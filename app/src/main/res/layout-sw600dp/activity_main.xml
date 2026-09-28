@@ -89,3 +89,52 @@
                 android:gravity="center" />
         </LinearLayout>
     </LinearLayout>
+
+    <!-- 右栏：Android Application + 按钮 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="24dp">
+
+        <TextView
+            android:id="@+id/tvAndroidApp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Android Application"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3eef8"
+            android:paddingVertical="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnChange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#7b5bb2"
+                android:text="Change"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#7b5bb2"
+                android:text="Cancel"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
